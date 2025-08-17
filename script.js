@@ -1,4 +1,4 @@
-// Enhanced JavaScript for Gunda Website with Modern Interactions
+// Enhanced JavaScript for Kudumbinator Website with Modern Interactions
 
 // Hero Section Scroll Effects
 function initHeroScrollEffects() {
@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    console.log('🚀 Gunda Website Enhanced with Modern UI Framework!');
+    console.log('🚀 Kudumbinator Website Enhanced with Modern UI Framework!');
 });
 
 

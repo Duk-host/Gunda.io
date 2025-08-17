@@ -1,4 +1,4 @@
-# Gunda's Startup Directory - Modern UI Enhancement
+# Kudumbinator - Modern UI Enhancement
 
 ## 🚀 Modern UI Frameworks & Features Added
 
