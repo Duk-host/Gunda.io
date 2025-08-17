@@ -1,6 +1,56 @@
 // Enhanced JavaScript for Gunda Website with Modern Interactions
 
+// Hero Section Scroll Effects
+function initHeroScrollEffects() {
+    const heroSection = document.querySelector('.hero-section');
+    
+    if (!heroSection) return;
+    
+    function handleScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const heroHeight = heroSection.offsetHeight;
+        
+        // Add scrolled class when user scrolls down
+        if (scrollTop > 50) {
+            heroSection.classList.add('scrolled');
+        } else {
+            heroSection.classList.remove('scrolled');
+        }
+        
+        // Calculate scroll progress for parallax effect
+        const scrollProgress = Math.min(scrollTop / heroHeight, 1);
+        
+        // Apply parallax effect to background elements
+        const backgroundElements = heroSection.querySelectorAll('.absolute');
+        backgroundElements.forEach((element, index) => {
+            const speed = (index + 1) * 0.5;
+            const translateY = scrollProgress * speed * 50;
+            element.style.transform = `translateY(${translateY}px)`;
+        });
+    }
+    
+    // Throttle scroll events for better performance
+    let ticking = false;
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(handleScroll);
+            ticking = true;
+        }
+    }
+    
+    window.addEventListener('scroll', requestTick);
+    
+    // Initial call
+    handleScroll();
+}
+
+// Initialize hero scroll effects when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
+    initHeroScrollEffects();
+    
+    // Re-initialize if needed (for dynamic content)
+    setTimeout(initHeroScrollEffects, 1000);
+
     // Enhanced Mobile Navigation
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
@@ -108,16 +158,6 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.transform = 'translateY(0) scale(1)';
         });
     });
-
-    // Parallax Effect for Hero Section
-    const heroSection = document.querySelector('.hero-section');
-    if (heroSection) {
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            const parallax = scrolled * 0.5;
-            heroSection.style.transform = `translateY(${parallax}px)`;
-        });
-    }
 
     // Enhanced Card Hover Effects
     const projectCards = document.querySelectorAll('.project-card');

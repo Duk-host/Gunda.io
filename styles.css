@@ -1150,3 +1150,123 @@ html {
     outline: 2px solid #3b82f6;
     outline-offset: 2px;
 }
+
+/* Hero Section Scroll Effects */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section .container {
+    width: 100%;
+}
+
+.hero-section .max-w-5xl {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-title {
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.hero-subtitle {
+    transform: translateY(0);
+    transition: transform 0.3s ease-out 0.1s;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    color: #4B5563;
+}
+
+.hero-cta {
+    transform: translateY(0);
+    transition: transform 0.3s ease-out 0.2s;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.trust-indicators {
+    transform: translateY(0);
+    transition: transform 0.3s ease-out 0.3s;
+    justify-content: center;
+}
+
+/* Scroll-triggered animations */
+.hero-section.scrolled .hero-title {
+    transform: translateY(20px);
+}
+
+.hero-section.scrolled .hero-subtitle {
+    transform: translateY(15px);
+}
+
+.hero-section.scrolled .hero-cta {
+    transform: translateY(10px);
+}
+
+.hero-section.scrolled .trust-indicators {
+    transform: translateY(5px);
+}
+
+/* Parallax background effect */
+.hero-section .absolute {
+    transition: transform 0.1s ease-out;
+}
+
+.hero-section.scrolled .absolute:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+.hero-section.scrolled .absolute:nth-child(2) {
+    transform: translateY(-15px);
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero section responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 80vh;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-cta {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+}

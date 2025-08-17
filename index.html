@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gunda | We Build, Fund & Grow Startups</title>
-    <meta name="description" content="Gunda is a startup studio backed by Y Combinator. We help companies build products, and we incubate and fund the next generation of businesses.">
+    <title>Gunda's Directory | Building, Funding & Growing World-Class Startups</title>
+    <meta name="description" content="Gunda's Directory is a startup studio that helps founders build great products, providing capital, mentorship, and resources to succeed. Backed by Y Combinator.">
+    <meta name="keywords" content="startup studio, venture capital, startup funding, business incubation, entrepreneurship, startup mentorship">
+    <meta name="author" content="Gunda's Directory">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Gunda's Directory | Building, Funding & Growing World-Class Startups">
+    <meta property="og:description" content="We help founders build great products, providing capital, mentorship, and resources to succeed.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gundasdirectory.com">
     
     <!-- Modern UI Frameworks -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -46,222 +54,430 @@
                     animation: {
                         'float': 'float 6s ease-in-out infinite',
                         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'fade-in': 'fadeIn 1s ease-out',
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 min-h-screen">
+<body class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 min-h-screen font-sans antialiased">
 
-    <header class="site-header backdrop-blur-md bg-white/80 border-b border-gray-200/50 sticky top-0 z-50 transition-all duration-300">
-        <div class="container header-inner max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <a href="index.html" class="logo group flex items-center space-x-3 hover:scale-105 transition-transform duration-200">
-                <div class="logo-mark-wrapper relative">
-                    <svg class="logo-mark w-10 h-10 drop-shadow-lg group-hover:drop-shadow-xl transition-all duration-300" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="40" height="40" rx="8" fill="url(#logo-gradient)"/>
-                        <path d="M26.6 20.0001C26.6 23.6465 23.6465 26.6001 20 26.6001C16.3535 26.6001 13.4 23.6465 13.4 20.0001C13.4 16.3536 16.3535 13.4001 20 13.4001C21.7856 13.4001 23.424 14.095 24.636 15.2361L24.6394 15.2394L24.636 15.2361V15.2394L21.2 18.6755V18.6722C20.8133 18.2855 20.4267 18.0001 20 18.0001C18.8954 18.0001 18 18.8955 18 20.0001C18 21.1046 18.8954 22.0001 20 22.0001C21.1046 22.0001 22 21.1046 22 20.0001V19.4001H20V20.6001H22V20.0001C22 19.2269 21.7732 18.5269 21.2 18.0001L25.4853 13.7148C24.0343 12.2638 22.1314 11.4001 20 11.4001C15.2487 11.4001 11.4 15.2488 11.4 20.0001C11.4 24.7513 15.2487 28.6001 20 28.6001C24.7513 28.6001 28.6 24.7513 28.6 20.0001H26.6Z" fill="white"/>
-                        <defs>
-                            <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#00A3FF"/>
-                                <stop offset="1" stop-color="#007ACC"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <div class="absolute -inset-2 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500"></div>
-                </div>
-                <span class="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">Gunda's Directory</span>
-            </a>
-            <nav class="nav">
-                <button class="nav-toggle lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200" aria-label="Toggle Menu">
-                    <span class="burger-icon w-6 h-6 flex flex-col justify-center items-center">
-                        <span class="w-5 h-0.5 bg-gray-700 rounded-full transition-all duration-300"></span>
-                        <span class="w-5 h-0.5 bg-gray-700 rounded-full mt-1 transition-all duration-300"></span>
-                        <span class="w-5 h-0.5 bg-gray-700 rounded-full mt-1 transition-all duration-300"></span>
-                    </span>
-                </button>
-                <ul class="nav-menu hidden lg:flex items-center space-x-8">
-                    <li><a href="index.html" class="nav-link active relative group px-4 py-2 rounded-lg hover:bg-blue-50 transition-all duration-200">Home</a></li>
-                    <li><a href="about.html" class="nav-link relative group px-4 py-2 rounded-lg hover:bg-blue-50 transition-all duration-200">About</a></li>
-                    <li><a href="projects.html" class="nav-link relative group px-4 py-2 rounded-lg hover:bg-blue-50 transition-all duration-200">Our Portfolio</a></li>
-                    <li><a href="team.html" class="nav-link relative group px-4 py-2 rounded-lg hover:bg-blue-50 transition-all duration-200">Team</a></li>
-                    <li><a href="contact.html" class="nav-link relative group px-4 py-2 rounded-lg hover:bg-blue-50 transition-all duration-200">Contact</a></li>
-                </ul>
-            </nav>
+    <!-- Header Navigation -->
+    <header class="site-header backdrop-blur-md bg-white/90 border-b border-gray-200/50 sticky top-0 z-50 transition-all duration-300 shadow-sm">
+        <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="index.html" class="logo group flex items-center space-x-3 hover:scale-105 transition-transform duration-200">
+                    <div class="logo-mark-wrapper relative">
+                        <svg class="logo-mark w-10 h-10 drop-shadow-lg group-hover:drop-shadow-xl transition-all duration-300" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="url(#logo-gradient)"/>
+                            <path d="M26.6 20.0001C26.6 23.6465 23.6465 26.6001 20 26.6001C16.3535 26.6001 13.4 23.6465 13.4 20.0001C13.4 16.3536 16.3535 13.4001 20 13.4001C21.7856 13.4001 23.424 14.095 24.636 15.2361L24.6394 15.2394L24.636 15.2361V15.2394L21.2 18.6755V18.6722C20.8133 18.2855 20.4267 18.0001 20 18.0001C18.8954 18.0001 18 18.8955 18 20.0001C18 21.1046 18.8954 22.0001 20 22.0001C21.1046 22.0001 22 21.1046 22 20.0001V19.4001H20V20.6001H22V20.0001C22 19.2269 21.7732 18.5269 21.2 18.0001L25.4853 13.7148C24.0343 12.2638 22.1314 11.4001 20 11.4001C15.2487 11.4001 11.4 15.2488 11.4 20.0001C11.4 24.7513 15.2487 28.6001 20 28.6001C24.7513 28.6001 28.6 24.7513 28.6 20.0001H26.6Z" fill="white"/>
+                            <defs>
+                                <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#00A3FF"/>
+                                    <stop offset="1" stop-color="#007ACC"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="absolute -inset-2 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500"></div>
+                    </div>
+                    <span class="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">Gunda's Directory</span>
+                </a>
+                
+                <!-- Navigation Menu -->
+                <nav class="nav">
+                    <button class="nav-toggle lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200" aria-label="Toggle Menu">
+                        <span class="burger-icon w-6 h-6 flex flex-col justify-center items-center">
+                            <span class="w-5 h-0.5 bg-gray-700 rounded-full transition-all duration-300"></span>
+                            <span class="w-5 h-0.5 bg-gray-700 rounded-full mt-1 transition-all duration-300"></span>
+                            <span class="w-5 h-0.5 bg-gray-700 rounded-full mt-1 transition-all duration-300"></span>
+                        </span>
+                    </button>
+                    <ul class="nav-menu hidden lg:flex items-center space-x-8">
+                        <li><a href="index.html" class="nav-link active relative group px-4 py-2 rounded-lg hover:bg-blue-50 transition-all duration-200 font-medium">Home</a></li>
+                        <li><a href="about.html" class="nav-link relative group px-4 py-2 rounded-lg hover:bg-blue-50 transition-all duration-200 font-medium">About</a></li>
+                        <li><a href="projects.html" class="nav-link relative group px-4 py-2 rounded-lg hover:bg-blue-50 transition-all duration-200 font-medium">Portfolio</a></li>
+                        <li><a href="upcoming-projects.html" class="nav-link relative group px-4 py-2 rounded-lg hover:bg-blue-50 transition-all duration-200 font-medium">Upcoming Projects</a></li>
+                        <li><a href="team.html" class="nav-link relative group px-4 py-2 rounded-lg hover:bg-blue-50 transition-all duration-200 font-medium">Team</a></li>
+                        <li><a href="contact.html" class="nav-link relative group px-4 py-2 rounded-lg hover:bg-blue-50 transition-all duration-200 font-medium">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <main>
-        <section class="section hero-section relative overflow-hidden py-20 lg:py-32">
+    <main class="relative">
+        <!-- Hero Section -->
+        <section class="hero-section relative overflow-hidden py-24 lg:py-32 xl:py-40">
             <!-- Animated Background Elements -->
             <div class="absolute inset-0 overflow-hidden">
                 <div class="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-400/20 to-purple-500/20 rounded-full blur-3xl animate-float"></div>
                 <div class="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 rounded-full blur-3xl animate-float" style="animation-delay: -2s;"></div>
-                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-r from-indigo-400/10 to-pink-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
             </div>
             
             <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div class="hero-content text-center max-w-4xl mx-auto">
-                    <div class="backed-by inline-flex items-center space-x-2 bg-gradient-to-r from-orange-50 to-yellow-50 border border-orange-200 rounded-full px-6 py-3 mb-8 shadow-sm hover:shadow-md transition-shadow duration-300">
-                        <svg class="w-5 h-5 text-orange-500" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM19.5 12a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z" fill="#FF6600"/>
-                            <path d="M12 12.75a.75.75 0 00.75-.75V8.25a.75.75 0 00-1.5 0V12c0 .414.336.75.75.75zM12 15.75a.75.75 0 01.75.75v.001a.75.75 0 01-1.5 0v-.001a.75.75 0 01.75-.75z" fill="#FF6600"/>
-                        </svg>
-                        <span class="text-sm font-medium text-orange-700">Backed by Y Combinator</span>
-                    </div>
-                    
-                    <h1 class="hero-title text-5xl lg:text-7xl font-bold leading-tight mb-8 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-900 bg-clip-text text-transparent">
-                        We Build, Fund & Grow 
-                        <span class="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">World-Class Companies.</span>
+                <div class="max-w-5xl mx-auto text-center">
+                    <h1 class="hero-title text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-8 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-900 bg-clip-text text-transparent">
+                        Turn Your 
+                        <span class="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Dreams Into</span>
+                        <span class="block text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600">Reality</span>
                     </h1>
-                    
-                    <p class="hero-subtitle text-xl lg:text-2xl text-gray-600 leading-relaxed mb-12 max-w-3xl mx-auto">
-                        We are a startup studio that helps founders build great products, providing the capital, mentorship, and resources to succeed.
+                    <p class="hero-subtitle text-lg lg:text-xl xl:text-2xl text-gray-600 leading-relaxed mb-12 max-w-4xl mx-auto">
+                        We help unconventional founders from all walks of life build successful businesses. No matter your background, education, or past—if you have a vision, we have the resources to help you achieve it.
                     </p>
                     
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <a href="projects.html" class="btn btn-primary group relative overflow-hidden bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
-                            <span class="relative z-10">View Our Portfolio</span>
-                            <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="hero-cta flex flex-col sm:flex-row gap-6 justify-center mb-16">
+                        <a href="contact.html" class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold text-lg px-10 py-5 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-blue-500/25">
+                            Get Started Today
                         </a>
-                        <a href="contact.html" class="btn btn-secondary group bg-white/80 backdrop-blur-sm border-2 border-gray-200 text-gray-700 font-semibold px-8 py-4 rounded-xl shadow-sm hover:shadow-md hover:bg-white transform hover:-translate-y-1 transition-all duration-300">
-                            Get Started
+                        <a href="projects.html" class="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-bold text-lg px-10 py-5 rounded-xl transition-all duration-300 transform hover:scale-105">
+                            View Our Portfolio
                         </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section stats-section py-16 lg:py-24">
-            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="stats-card bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl border border-gray-200/50 p-8 lg:p-12">
-                    <div class="text-center mb-12">
-                        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Impact in Numbers</h2>
-                        <p class="text-lg text-gray-600 max-w-2xl mx-auto">We've helped hundreds of entrepreneurs turn their ideas into successful businesses</p>
                     </div>
                     
-                    <div class="stats-grid grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-                        <div class="stat-item text-center group">
-                            <div class="relative mb-6">
-                                <div class="w-24 h-24 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
-                                    <i class="fas fa-rocket text-3xl text-white"></i>
-                                </div>
-                                <div class="absolute -inset-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500"></div>
-                            </div>
-                            <h3 class="stat-number text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">50+</h3>
-                            <p class="stat-label text-lg text-gray-600 font-medium">Companies Funded</p>
+                    <!-- Trust Indicators -->
+                    <div class="trust-indicators flex flex-wrap justify-center items-center gap-8 text-gray-500">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-shield-alt text-lg"></i>
+                            <span class="text-sm font-medium">Trusted by 500+ Founders</span>
                         </div>
-                        
-                        <div class="stat-item text-center group">
-                            <div class="relative mb-6">
-                                <div class="w-24 h-24 mx-auto bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
-                                    <i class="fas fa-chart-line text-3xl text-white"></i>
-                                </div>
-                                <div class="absolute -inset-2 bg-gradient-to-r from-green-400 to-emerald-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500"></div>
-                            </div>
-                            <h3 class="stat-number text-4xl lg:text-5xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-2">92%</h3>
-                            <p class="stat-label text-lg text-gray-600 font-medium">Success Rate</p>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-award text-lg"></i>
+                            <span class="text-sm font-medium">Industry Recognition</span>
                         </div>
-                        
-                        <div class="stat-item text-center group">
-                            <div class="relative mb-6">
-                                <div class="w-24 h-24 mx-auto bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
-                                    <i class="fas fa-dollar-sign text-3xl text-white"></i>
-                                </div>
-                                <div class="absolute -inset-2 bg-gradient-to-r from-orange-400 to-red-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500"></div>
-                            </div>
-                            <h3 class="stat-number text-4xl lg:text-5xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-2">$150M+</h3>
-                            <p class="stat-label text-lg text-gray-600 font-medium">Capital Raised</p>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-globe text-lg"></i>
+                            <span class="text-sm font-medium">Global Network</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section py-16 lg:py-24">
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us-section py-20 lg:py-28 bg-gradient-to-br from-blue-50 to-indigo-100">
             <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="content-card">
-                    <div class="text-center mb-16">
-                        <h2 class="section-title text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Our Portfolio Companies</h2>
-                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Discover the innovative startups we've helped build, fund, and grow across various industries</p>
+                <div class="text-center mb-20">
+                    <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Why Choose Gunda's Directory?</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">We're not just another startup directory. We're a community of builders, mentors, and believers in unconventional success stories.</p>
+                </div>
+                
+                <div class="features-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+                    <div class="feature-card text-center group">
+                        <div class="relative mb-6">
+                            <div class="w-20 h-20 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
+                                <i class="fas fa-users text-2xl text-white"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Community-First Approach</h3>
+                        <p class="text-gray-600 leading-relaxed">We believe in building lasting relationships, not just business transactions. Our network grows stronger with every success story.</p>
                     </div>
                     
-                    <div class="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-                        <article class="project-card group bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl border border-gray-200/50 overflow-hidden transition-all duration-500 transform hover:-translate-y-2">
-                            <a href="deshamoolam-damu.html" class="project-card-link block">
-                                <div class="relative overflow-hidden">
-                                    <img src="https://i.ibb.co/kX5s0Yd/DALL-E-2024-05-15-15-15-15-A-cinematic-photo-of-a-tough-looking-South-Indian-man-in-his-40s-standin.png" alt="Deshamoolam Damu" class="project-media w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
-                                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                    <div class="absolute bottom-4 left-4 right-4">
-                                        <div class="bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                                            <span class="text-sm font-medium text-gray-700">View Details →</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-body p-6">
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">Deshamoolam Damu's Herbs</h3>
-                                    <p class="text-gray-600 leading-relaxed mb-4">From a small village vendor to a statewide supplier of rare medicinal herbs, Damu's story is one of resilience and deep-rooted knowledge.</p>
-                                    <ul class="tags flex flex-wrap gap-2">
-                                        <li class="px-3 py-1 bg-blue-100 text-blue-700 text-sm font-medium rounded-full">Agriculture</li>
-                                        <li class="px-3 py-1 bg-green-100 text-green-700 text-sm font-medium rounded-full">Wellness</li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </article>
-                        
-                        <article class="project-card group bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl border border-gray-200/50 overflow-hidden transition-all duration-500 transform hover:-translate-y-2">
-                            <a href="ambattur-singam.html" class="project-card-link block">
-                                <div class="relative overflow-hidden">
-                                    <img src="https://i.ibb.co/P9M1Wcf/DALL-E-2024-05-15-15-15-11-A-cinematic-photo-of-a-confident-South-Indian-man-in-his-30s-the-founde.png" alt="Ambattur Singam" class="project-media w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
-                                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                    <div class="absolute bottom-4 left-4 right-4">
-                                        <div class="bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                                            <span class="text-sm font-medium text-gray-700">View Details →</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-body p-6">
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">Ambattur Singam Logistics</h3>
-                                    <p class="text-gray-600 leading-relaxed mb-4">A local delivery service that started with one bike and grew into a tech-powered logistics network with a 5M+ download app.</p>
-                                    <ul class="tags flex flex-wrap gap-2">
-                                        <li class="px-3 py-1 bg-purple-100 text-purple-700 text-sm font-medium rounded-full">Logistics</li>
-                                        <li class="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm font-medium rounded-full">Tech</li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </article>
-                        
-                        <article class="project-card group bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl border border-gray-200/50 overflow-hidden transition-all duration-500 transform hover:-translate-y-2">
-                            <a href="muthupandi.html" class="project-card-link block">
-                                <div class="relative overflow-hidden">
-                                    <img src="https://i.ibb.co/yQj33p3/DALL-E-2024-05-15-15-15-20-A-cinematic-photo-of-a-skilled-South-Indian-artisan-in-his-50s-in-hi.png" alt="Muthupandi" class="project-media w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
-                                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                    <div class="absolute bottom-4 left-4 right-4">
-                                        <div class="bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                                            <span class="text-sm font-medium text-gray-700">View Details →</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-body p-6">
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">Muthupandi Leather</h3>
-                                    <p class="text-gray-600 leading-relaxed mb-4">An artisan from Madurai who transformed his family's small leather shop into an international brand known for quality and craftsmanship.</p>
-                                    <ul class="tags flex flex-wrap gap-2">
-                                        <li class="px-3 py-1 bg-orange-100 text-orange-700 text-sm font-medium rounded-full">E-commerce</li>
-                                        <li class="px-3 py-1 bg-red-100 text-red-700 text-sm font-medium rounded-full">Manufacturing</li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </article>
+                    <div class="feature-card text-center group">
+                        <div class="relative mb-6">
+                            <div class="w-20 h-20 mx-auto bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
+                                <i class="fas fa-lightbulb text-2xl text-white"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Innovation Without Limits</h3>
+                        <p class="text-gray-600 leading-relaxed">We don't discriminate based on background or education. If you have a vision, we have the resources to help you achieve it.</p>
                     </div>
+                    
+                    <div class="feature-card text-center group">
+                        <div class="relative mb-6">
+                            <div class="w-20 h-20 mx-auto bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
+                                <i class="fas fa-rocket text-2xl text-white"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Proven Track Record</h3>
+                        <p class="text-gray-600 leading-relaxed">From village vendors to tech entrepreneurs, we've helped diverse founders turn their dreams into reality.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Showcase Section -->
+        <section class="portfolio-showcase-section py-20 lg:py-28 bg-gradient-to-br from-gray-50 to-white">
+            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-20">
+                    <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Our Portfolio Companies</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Discover the innovative startups we've helped build, fund, and grow across various industries</p>
+                </div>
+                
+                <div class="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+                    <article class="project-card group bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl border border-gray-200/50 overflow-hidden transition-all duration-500 transform hover:-translate-y-2">
+                        <div class="project-body p-8">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">Deshamoolam Damu's Herbs</h3>
+                            <p class="text-gray-600 leading-relaxed mb-6 text-lg">From a small village vendor to a statewide supplier of rare medicinal herbs, Damu's story is one of resilience and deep-rooted knowledge.</p>
+                            <div class="flex flex-wrap gap-3 mb-6">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm font-medium rounded-full">Agriculture</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-700 text-sm font-medium rounded-full">Wellness</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <button onclick="window.open('deshamoolam-damu.html', '_blank')" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">View Full Story →</button>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card group bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl border border-gray-200/50 overflow-hidden transition-all duration-500 transform hover:-translate-y-2">
+                        <div class="project-body p-8">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">Ambattur Singam Logistics</h3>
+                            <p class="text-gray-600 leading-relaxed mb-6 text-lg">A local delivery service that started with one bike and grew into a tech-powered logistics network with a 5M+ download app.</p>
+                            <div class="flex flex-wrap gap-3 mb-6">
+                                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm font-medium rounded-full">Logistics</span>
+                                <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm font-medium rounded-full">Tech</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <button onclick="window.open('ambattur-singam.html', '_blank')" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">View Full Story →</button>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card group bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl border border-gray-200/50 overflow-hidden transition-all duration-500 transform hover:-translate-y-2">
+                        <div class="project-body p-8">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">Muthupandi Leather</h3>
+                            <p class="text-gray-600 leading-relaxed mb-6 text-lg">An artisan from Madurai who transformed his family's small leather shop into an international brand known for quality and craftsmanship.</p>
+                            <div class="flex flex-wrap gap-3 mb-6">
+                                <span class="px-3 py-1 bg-orange-100 text-orange-700 text-sm font-medium rounded-full">E-commerce</span>
+                                <span class="px-3 py-1 bg-red-100 text-red-700 text-sm font-medium rounded-full">Manufacturing</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <button onclick="window.open('muthupandi.html', '_blank')" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">View Full Story →</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- View All Portfolio CTA -->
+                <div class="text-center mt-16">
+                    <a href="projects.html" class="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        <span>View All Portfolio Companies</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories Showcase Section -->
+        <section class="success-stories-section py-20 lg:py-28 bg-white">
+            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="text-center mb-20">
+                    <h2 class="section-title text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+                        <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Success Stories</span>
+                        <br>
+                        <span class="text-gray-700">That Inspire</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                        Real entrepreneurs, real transformations, real impact. See how we've helped turn dreams into thriving businesses.
+                    </p>
+                </div>
+                
+                <!-- Featured Success Story -->
+                <div class="featured-story mb-20">
+                    <div class="bg-gradient-to-br from-blue-50 via-white to-purple-50 rounded-3xl p-8 lg:p-12 border border-blue-200/50 shadow-2xl">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                            <div class="story-content">
+                                <div class="mb-6">
+                                    <span class="inline-block px-4 py-2 bg-blue-100 text-blue-700 text-sm font-semibold rounded-full mb-4">Featured Story</span>
+                                    <h3 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">From Street Vendor to Business Empire</h3>
+                                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                                        "Gunda's Directory didn't just give me money. They gave me knowledge, connections, and the confidence to dream bigger. 
+                                        Today, I'm not just selling herbs - I'm building a wellness empire."
+                                    </p>
+                                    <div class="flex items-center space-x-4 mb-6">
+                                        <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center">
+                                            <span class="text-white font-bold text-lg">D</span>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-gray-900">Deshamoolam Damu</p>
+                                            <p class="text-gray-600">Founder, Damu's Herbs</p>
+                                        </div>
+                                    </div>
+                                    <button onclick="window.open('deshamoolam-damu.html', '_blank')" class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                                        Read Full Story →
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="story-stats">
+                                <div class="grid grid-cols-2 gap-6">
+                                    <div class="stat-item text-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-gray-200/50">
+                                        <div class="text-3xl font-bold text-blue-600 mb-2">₹50L+</div>
+                                        <div class="text-gray-600 text-sm">Annual Revenue</div>
+                                    </div>
+                                    <div class="stat-item text-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-gray-200/50">
+                                        <div class="text-3xl font-bold text-green-600 mb-2">200+</div>
+                                        <div class="text-gray-600 text-sm">Employees</div>
+                                    </div>
+                                    <div class="stat-item text-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-gray-200/50">
+                                        <div class="text-3xl font-bold text-purple-600 mb-2">15</div>
+                                        <div class="text-gray-600 text-sm">Districts</div>
+                                    </div>
+                                    <div class="stat-item text-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-gray-200/50">
+                                        <div class="text-3xl font-bold text-orange-600 mb-2">5Y</div>
+                                        <div class="text-gray-600 text-sm">Success</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Success Metrics -->
+                <div class="success-metrics mb-20">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="metric-card text-center p-8 bg-white/80 backdrop-blur-sm rounded-2xl border border-gray-200/50 hover:shadow-xl transition-all duration-300">
+                            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-rocket text-2xl text-white"></i>
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900 mb-2">120+</h4>
+                            <p class="text-gray-600">Startups Launched</p>
+                        </div>
+                        <div class="metric-card text-center p-8 bg-white/80 backdrop-blur-sm rounded-2xl border border-gray-200/50 hover:shadow-xl transition-all duration-300">
+                            <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-chart-line text-2xl text-white"></i>
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900 mb-2">98%</h4>
+                            <p class="text-gray-600">Success Rate</p>
+                        </div>
+                        <div class="metric-card text-center p-8 bg-white/80 backdrop-blur-sm rounded-2xl border border-gray-200/50 hover:shadow-xl transition-all duration-300">
+                            <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-clock text-2xl text-white"></i>
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900 mb-2">24/7</h4>
+                            <p class="text-gray-600">Support Available</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Call to Action -->
+                <div class="cta-section text-center">
+                    <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 lg:p-12 text-white">
+                        <h3 class="text-3xl lg:text-4xl font-bold mb-6">Ready to Write Your Success Story?</h3>
+                        <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                            Join hundreds of entrepreneurs who've transformed their lives with Gunda's Directory. 
+                            Your journey to success starts with one conversation.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <button onclick="window.open('contact.html', '_blank')" class="bg-white text-blue-600 hover:bg-gray-100 font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
+                                Start Your Journey
+                            </button>
+                            <button onclick="window.open('projects.html', '_blank')" class="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105">
+                                View All Stories
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Turn Hustle Into Business Section -->
+        <section class="turn-hustle-section py-20 lg:py-28 bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 relative overflow-hidden">
+            <!-- Background Elements -->
+            <div class="absolute inset-0">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
+                <div class="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-400/10 to-purple-500/10 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-cyan-400/10 to-blue-500/10 rounded-full blur-3xl"></div>
+            </div>
+            
+            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-4xl mx-auto">
+                    <h2 class="text-4xl lg:text-6xl font-bold text-white mb-8">
+                        Turn Your 
+                        <span class="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent">Hustle</span>
+                        <br>
+                        Into a 
+                        <span class="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">Business</span>
+                    </h2>
+                    <p class="text-xl lg:text-2xl text-gray-300 leading-relaxed mb-12 max-w-3xl mx-auto">
+                        Stop working for others. Start building your empire. We provide the mentorship, funding, and network you need to scale your side hustle into a thriving business.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+                        <button onclick="window.open('contact.html', '_blank')" class="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white font-bold px-10 py-5 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-orange-500/25">
+                            Start Your Journey
+                        </button>
+                        <button onclick="window.open('upcoming-projects.html', '_blank')" class="border-2 border-white/30 text-white hover:bg-white hover:text-gray-900 font-bold px-10 py-5 rounded-xl transition-all duration-300 transform hover:scale-105">
+                            See Success Stories
+                        </button>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto bg-gradient-to-r from-orange-500 to-yellow-500 rounded-2xl flex items-center justify-center mb-4">
+                                <i class="fas fa-chart-line text-2xl text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Proven Framework</h3>
+                            <p class="text-gray-300">Our step-by-step approach has helped hundreds of entrepreneurs scale from idea to exit.</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mb-4">
+                                <i class="fas fa-handshake text-2xl text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Expert Network</h3>
+                            <p class="text-gray-300">Connect with successful founders, investors, and mentors who've been in your shoes.</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mb-4">
+                                <i class="fas fa-coins text-2xl text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Funding Access</h3>
+                            <p class="text-gray-300">Get connected to the right investors and funding sources for your business stage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section py-20 lg:py-28 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 relative overflow-hidden">
+            <!-- Background Elements -->
+            <div class="absolute inset-0">
+                <div class="absolute top-20 left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-20 right-10 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+            </div>
+            
+            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-4xl mx-auto">
+                    <h2 class="text-4xl lg:text-6xl font-bold text-white mb-8">
+                        Ready to Start Your 
+                        <span class="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">Success Story</span>?
+                    </h2>
+                    <p class="text-xl lg:text-2xl text-blue-100 leading-relaxed mb-12 max-w-3xl mx-auto">
+                        Join hundreds of entrepreneurs who've transformed their lives through our platform. Your journey starts with one conversation.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center mb-8">
+                        <a href="contact.html" class="bg-white text-blue-600 hover:bg-gray-100 font-bold px-10 py-5 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-2xl">
+                            Get Started Today
+                        </a>
+                        <a href="upcoming-projects.html" class="border-2 border-white/30 text-white hover:bg-white hover:text-blue-600 font-bold px-10 py-5 rounded-xl transition-all duration-300 transform hover:scale-105">
+                            Explore Opportunities
+                        </a>
+                    </div>
+                    
+                    <p class="text-blue-200 text-lg">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        Call us: +91 98765 43210 | 
+                        <i class="fas fa-envelope mr-2 ml-4"></i>
+                        Email: hello@gundasdirectory.com
+                    </p>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer bg-white/80 backdrop-blur-sm border-t border-gray-200/50 py-12 lg:py-16">
+    <!-- Footer -->
+    <footer class="site-footer bg-white/90 backdrop-blur-sm border-t border-gray-200/50 py-16 lg:py-20">
         <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="footer-inner">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-8">
+                <!-- Main Footer Content -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
+                    <!-- Company Info -->
                     <div class="col-span-1 md:col-span-2 lg:col-span-1">
                         <div class="flex items-center space-x-3 mb-6">
                             <svg class="w-8 h-8" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -277,6 +493,8 @@
                             <span class="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">Gunda's Directory</span>
                         </div>
                         <p class="text-gray-600 leading-relaxed mb-6">Building the next generation of successful startups through innovation, funding, and mentorship.</p>
+                        
+                        <!-- Social Media Links -->
                         <div class="flex space-x-4">
                             <a href="#" class="w-10 h-10 bg-gray-100 hover:bg-blue-100 rounded-full flex items-center justify-center text-gray-600 hover:text-blue-600 transition-all duration-200">
                                 <i class="fab fa-twitter"></i>
@@ -290,6 +508,7 @@
                         </div>
                     </div>
                     
+                    <!-- Company Links -->
                     <div>
                         <h4 class="text-lg font-semibold text-gray-900 mb-4">Company</h4>
                         <ul class="space-y-3">
@@ -300,6 +519,7 @@
                         </ul>
                     </div>
                     
+                    <!-- Resources Links -->
                     <div>
                         <h4 class="text-lg font-semibold text-gray-900 mb-4">Resources</h4>
                         <ul class="space-y-3">
@@ -311,8 +531,9 @@
                     </div>
                 </div>
                 
+                <!-- Footer Bottom -->
                 <div class="pt-8 border-t border-gray-200/50 flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-gray-600 text-sm mb-4 md:mb-0">&copy; 2024 Gunda's Startup Directory. All Rights Reserved.</p>
+                    <p class="text-gray-600 text-sm mb-4 md:mb-0">&copy; 2024 Gunda's Directory. All Rights Reserved.</p>
                     <ul class="footer-links flex space-x-6 text-sm">
                         <li><a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Privacy Policy</a></li>
                         <li><a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Terms of Service</a></li>
@@ -323,6 +544,7 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
     
     <!-- Floating Action Button -->
